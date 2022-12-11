@@ -1,1 +1,2 @@
-# Stereo-Vision-Based-Road-Surface-Height-Estimation
+# Master's Thesis
+Kuo, C S. "Stereo Vision-Based Road Surface Estimation for Automotive Preview System." Master thesis, Department of Mechanical and Electro-Mechanical Engineering, National Sun Yat-sen University, Kaohsiung, Taiwan, 2019. https://hdl.handle.net/11296/d3ntzz
