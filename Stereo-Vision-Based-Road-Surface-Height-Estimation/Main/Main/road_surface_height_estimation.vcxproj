@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1BA326E8-99A7-49F8-B92C-4F0BACCA51B4}</ProjectGuid>
+    <RootNamespace>roadsurfaceheightestimation</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\CSK\source\repos\libSGM-master\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\install\include;C:\opencv_cuda\opencv-3.4.5\build_vtk\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/lib/x64/$(Configuration);C:\opencv_cuda\opencv-3.4.5\build_vtk\install\x64\vc15\lib;C:\Program Files\VTK\lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\install\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_viz345.lib;opencv_cudastereo345.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cudart_static.lib;C:\Users\CSK\source\repos\libSGM-master\build\src\Release\sgm.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudabgsegm345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudaobjdetect345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudastereo345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_stitching345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_superres345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_videostab345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_aruco345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_bgsegm345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_bioinspired345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_ccalib345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_dnn_objdetect345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_dpm345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_face345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_fuzzy345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_hfs345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_img_hash345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_line_descriptor345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_optflow345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_reg345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_rgbd345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_stereo345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_structured_light345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_surface_matching345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_tracking345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_xfeatures2d345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_ximgproc345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_xobjdetect345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_xphoto345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudafeatures2d345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_shape345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudacodec345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudaoptflow345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudalegacy345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudawarping345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_viz345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_phase_unwrapping345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_video345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_datasets345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_plot345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_text345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_dnn345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_ml345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_objdetect345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_calib3d345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_features2d345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_flann345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_highgui345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_videoio345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_imgcodecs345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_photo345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudaimgproc345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudafilters345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudaarithm345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_imgproc345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_core345.lib;C:\opencv_cuda\opencv-3.4.5\build_cudaextra\lib\Release\opencv_cudev345.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="road_surface.cpp" />
+    <ClCompile Include="Serial.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cvui.h" />
+    <ClInclude Include="SerialClass.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
