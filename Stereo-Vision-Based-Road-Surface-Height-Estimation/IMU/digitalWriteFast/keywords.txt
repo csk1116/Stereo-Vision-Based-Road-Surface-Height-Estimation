@@ -1,18 +1,3 @@
-#######################################
-# Syntax Coloring Map For DigitalWriteFast
-#######################################
-
-#######################################
-# Datatypes (KEYWORD1)
-#######################################
-
-DigitalWriteFast	KEYWORD1
-
-#######################################
-# Methods and Functions (KEYWORD2)
-#######################################
-
-digitalWriteFast	KEYWORD2
-pinModeFast	KEYWORD2
-digitalReadFast	KEYWORD2
-noAnalogWrite	KEYWORD2
+version https://git-lfs.github.com/spec/v1
+oid sha256:b76da638c6b8a65c07641e7a65e4bd876d61b38af90007f42e307e118b8be608
+size 465
