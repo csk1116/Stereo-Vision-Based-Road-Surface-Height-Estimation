@@ -1,0 +1,26 @@
+CX = 551.6546;
+CY = 270.6152;
+theta = 120*pi/180;
+f = 528.7462;
+TX = 119.5829;
+y = 500;
+A = zeros(64,2);
+B = zeros(64,2);
+HC = 1360;
+
+for d = 1:64
+    A(d,1) = d;
+    A(d,2) =  TX*(-(y-CY)*sin(theta)+f*cos(theta))/d + HC ;
+end
+
+for d = 1:64
+    B(d,1) = d;
+    B(d,2) =  TX*((y-CY)*cos(theta)+f*sin(theta))/d;
+end
+
+figure;
+plot(X(idx==1,1),X(idx==1,2),'r.','MarkerSize',12)
+
+figure;
+plot(X(idx==1,1),X(idx==1,2),'r.','MarkerSize',12)
+
